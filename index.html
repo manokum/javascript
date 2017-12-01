@@ -26,6 +26,29 @@ URL for a data : https://www.w3schools.com/angular/customers.php
             return "I am Hoisted";
         }
 
+        a = 1;
+        alert("Outside of Function"+a); // As expected it displays 1
+        function testVarHoist(){
+
+        alert("Inside of Function"+a); // Here something interesting happens
+        //the variable is hosited to the top and since in JS funtion accounts for the 
+        //scoping the value is being set to undefined as it is treated as var a;
+        console.log(a); // logs undefined
+        a =2;
+        alert("After value change"+a); // again we are initializing the local scoping of the variable a with value of 2 so it's value will be 2
+        var a = 3;
+        alert("Hi"+a); // again sets the value to be 3
+        }
+        testVarHoist();
+
+        alert("Outside of method"+a); // Boom I am outside the function have nothing with do with the value being set inside the function . 
+        //sI love 1 and I will be 1 uness I am changed in below lines to 2 ;
+        a = 2;
+        alert(a);
+        var a = 3; // Hey I am same as the above Family
+        alert("Outside of method after var declaration"+a);
+
+
         </script>
     </head>
 </html>
