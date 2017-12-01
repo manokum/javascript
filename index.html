@@ -1,9 +1,31 @@
+<!-- URL : https://www.youtube.com/watch?v=Ln4nXoGVno8
+URL for a data : https://www.w3schools.com/angular/customers.php
+-->
 <!DOCTYPE html>
 <html>
-<head>
-<title>Javascript</title>
-<body>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name ="viewport" width="device-width" intial-scale="1"/>
+        <title>Javascript</title>
+        <script>
+        // Vairable Hositing in JS
+        function fucnTest(){
+          //  console.log(testHoist); // this logs undefined
+            testHoist= "Hey Am I Hoisted";
+        }
+        fucnTest();
 
-</body>
-</head>
+        // the above method logs undefined as the variable declaration will be hosted to the top of the 
+        // hierarchy so 
+
+        // Function Hositing in javascript 
+        
+
+        testIMHosited();
+        function testIMHosited(){
+            return "I am Hoisted";
+        }
+
+        </script>
+    </head>
 </html>
