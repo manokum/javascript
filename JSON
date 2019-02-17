@@ -1,0 +1,51 @@
+JSON: JavaScript Object Notation.JSON is a syntax for storing and exchanging data.
+JSON is text, written with JavaScript object notation.
+
+Exchanging Data Between Browser and Server ::
+When exchanging data between a browser and a server, "the data can only be text" .
+1. JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server.
+2. We can also convert any JSON received from the server into JavaScript objects.
+This way we can work with the data as JavaScript objects, with no complicated parsing and translations.
+
+1. Sending data from the Browser to Server
+** stringify
+var myObj = { name: "John", age: 31, city: "New York" };
+var myJSON = JSON.stringify(myObj);
+
+2. On receiving data from the Server to Browser
+** parse
+var myJSON = '{"name":"John", "age":31, "city":"New York"}';
+var myObj = JSON.parse(myJSON);
+----------------------------------------------------------------------------------------
+JSON syntax is derived from JavaScript object notation syntax:
+1. Data is in name/value pairs
+2. Data is separated by commas
+3. Curly braces hold objects
+4. Square brackets hold arrays
+*****************************************************************************************
+The file type for JSON files is ".json"
+The MIME type for JSON text is "application/json"
+*****************************************************************************************
+The JSON format is almost identical to JavaScript objects.
+In JSON, keys must be strings, written with double quotes:
+JSON
+{ "name":"John" }
+In JavaScript, keys can be strings, numbers, or identifier names:
+JavaScript
+{ name:"John" }
+
+------------------------------------------------------------------------------------------
+Accessing Javascript Object Values : 
+You can access the object values by using dot (.) notation:
+
+myObj = { "name":"John", "age":30, "car":null };
+x = myObj.name;
+You can also access the object values by using bracket ([]) notation:
+
+myObj = { "name":"John", "age":30, "car":null };
+x = myObj["name"];
+-------------------------------------------------------------------------------------------
+
+JSONP is a method for sending JSON data without worrying about cross-domain issues.
+JSONP does not use the XMLHttpRequest object.
+JSONP uses the <script> tag instead.
