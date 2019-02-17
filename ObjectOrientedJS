@@ -1,0 +1,68 @@
+/*      Javascript Object oriented Programming : http://www.learn-js.org/en/Object_Oriented_JavaScript
+*                        */ 
+
+1. Javascript uses functions as objects to create classes using the new keyword 
+
+function StudentName(firstName,lastName){
+    // assign the respective values
+    this.firstName = firstName;
+    this.lastName = lastName;
+   // return respective firstName and lastName
+   this.displayName = function(){
+       console.log("First Name" + this.firstName);
+       console.log("Last Name" + this.lastName);
+   }
+}
+
+var student = new StudentName ("Mano","Kumar");
+student.displayName();
+
+2. Creating instances of classes immedialtely
+
+var student = {
+    firstName : "Mano",
+    lastName : "Kumar",
+    displayName : function(){
+        return "First Name" + this.firstName + "Last Name" + this.lastName;
+    }
+}
+
+3. Understanding call , apply and Bind  : 
+	var sample = {
+    	name: "TestSample"
+    }
+    //method to display the sample name
+    function displaySampleName(message) {
+    	console.log(this.name +" " + message)
+    }
+    // Using the bind 
+    var displayBindSample = displaySampleName.bind(sample,"is an example of bind");
+    displayBindSample()
+    // Using the call
+    displaySampleName.call(sample,"is an example of call")
+    // Using the apply
+    displaySampleName.apply(sample,["is an example of apply"])
+
+4. Inheritance in Javascript : 
+/*  There are 3 ways to achieve Inheritance in Javascript :
+1. Prototypical Inheritance
+2. Classical Inheritance
+3. Object Agumentation 
+*/
+
+// creating a Person Object (Example of Prototypical Inheritance)
+var Person = function(){}
+// creating methods of Person
+Person.prototype.initialize = function(name,age){
+	this.name = name;
+    this.age = age;
+}
+//creating a student , being derived from the Person object
+var Student = function(){}
+Student.prototype = new Person();
+Student.prototype.learn = function(subject){
+	console.log("Person" + this.name+ "learns" + subject);
+}
+var newStud = new Student();
+newStud.initialize("Mano",28);
+newStud.learn("Programming");
