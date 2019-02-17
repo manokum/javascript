@@ -1,0 +1,54 @@
+#Javascript
+
+** URL : https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230 **
+
+1. Useful Javascript Array and Object Methods
+a).filter()
+Creates a new array based on whether the items of an array pass a certain condition
+const studentsAge = [17, 16, 18, 19, 21, 17];
+const ableToDrink = studentsAge.filter( age => age > 18 );
+// ableToDrink will be equal to [19, 21]
+
+b).map()
+Creates a new array by manipulating the values in another array.
+Great for data manipulation and it is often used in React because it is an immutable method.
+const numbers = [2, 3, 4, 5];
+const dollars = numbers.map( number => '$' + number);
+// dollars will be equal to ['$2', '$3', '$4', '$5']
+
+c)reduce()
+This often overlooked method uses an accumulator to reduce all items in an array to a single value. 
+Great for calculating totals. The returned value can be of any type (i.e. object, array, string, integer).
+const numbers = [5, 10, 15];
+const total = numbers.reduce( (accumulator, currentValue) => accumulator + currentValue);
+// total will be equal to 30
+reduce() is advantageous in scenarios like flattening an array of arrays, grouping objects by a property 
+and removing duplicate items in array. 
+
+d).forEach()
+Applies a function on each item in an array.
+Log each array item to the console
+const emotions = ['happy', 'sad', 'angry'];
+emotions.forEach( emotion => console.log(emotion) ); // Will log the following:// 'happy'// 'sad'// 'angry'
+
+2) Useful Javascript Object Methods
+a)Object.values()
+  Return an array of the values of an object.
+  const icecreamColors = {
+    chocolate: 'brown',
+    vanilla: 'white',
+    strawberry: 'red',
+  }
+  const colors = Object.values(icecreamColors);
+  // colors will be equal to ["brown", "white", "red"]
+
+b)Object.keys()
+  Return an array of the keys of an object.
+  const icecreamColors = {
+  chocolate: 'brown',
+  vanilla: 'white',
+  strawberry: 'red',
+}
+
+const types = Object.keys(icecreamColors);
+// types will be equal to ["chocolate", "vanilla", "strawberry"]
