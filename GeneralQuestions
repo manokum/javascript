@@ -1,0 +1,47 @@
+
+
+** Basic Javascript **
+- What data types are supported by javascript ?
+- How do you create objects in javascript ?
+- What are scopes of a variable in javascript ? (local,global)
+- what is the purpose of this operator in javascript ?
+- In how many ways javascript can be invloved in a HTML file ?
+- Ways to define variables in javascript ? (let,const,var)?
+- Difference between local and session storage ?
+- What is Nan in Javascript ?
+- What would 2+7+"3" = 93
+- 
+
+
+1) What is difference betweeen let and const keywords in javascript ? let v/s var
+2) Difference between == and === ?
+3) Difference between null and undefined ?
+
+** Intermediate Javascript **
+1)What are arrow functions and it's usage in javascript ?
+2) What are callback functions in javascript ?
+3) What are closures in javascript , give example of closures in javascript ?
+- Some built in methods in javascript and the corresponding values returned by them :
+charAt()-
+concat()-
+forEach()-
+indexOf()-
+length()-
+pop()-
+push()-
+reverse()- it reverses the order of elements in the array .
+4) What is the typeOf operator in javascript ?
+5) Difference between attribute and property in javascript ?
+6) Different ways by which the HTML elements can be accessed in javascript :
+   getElementById()
+   getElementsByClass()
+   getElementsByTagName()
+   querySelector()
+7) What is event bubbling in javascript ?
+8) How to convert the strings of any base to integers in Javascript ? 
+9 ) What are exports and imports in javascript ?
+
+** Advanced Javascript **
+1) What are promises in javascript ?
+2) Difference between call and apply in javascript ?
+3) How to empty an array in javascript ?
