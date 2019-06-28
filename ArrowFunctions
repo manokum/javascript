@@ -1,0 +1,28 @@
+function dispName(name){
+  console.log(name);
+}
+
+dispName("Mano");
+
+// the above function consoles Mano as the name.
+
+** Arrow Functions : 
+
+const dispName = (name) => {
+  console.log(name);
+}
+dispName("Mano");
+// the above arrow function also consoles Mano as the name.
+
+Short Hand for arrow functions :
+1. in case of single return 
+
+const multiple = (num) => {
+  return num * 2;
+ }
+ 
+ The above could be shortend using arrow functions as 
+ 
+ const multiple = num => num*2 ; // this is short hand notation of Arrow functions 
+ 
+ 
