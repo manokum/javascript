@@ -66,3 +66,9 @@ Student.prototype.learn = function(subject){
 var newStud = new Student();
 newStud.initialize("Mano",28);
 newStud.learn("Programming");
+
+
+## Spread v/s rest operator 
+
+## Destrucuring 
+
